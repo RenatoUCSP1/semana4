@@ -1,12 +1,16 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
-int main(){
-    int x, suma;
-    for(x=0;x<=10;x*x){
-            for(x;x%1==0;x++){
-                x =x+suma;
-            }
-        cout<<x<<endl;
-    }
-return 0;
+int main (){
+int sum = 0;
+int squared = 0;
+int result = 0;
+const int N = 100;
+ 
+for (int i = 1; i ; sum += i){
+    squared += i * i;
+
+    result = sum * sum - squared;
+}
+cout << result << endl;
 }

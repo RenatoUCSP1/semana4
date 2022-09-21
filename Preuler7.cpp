@@ -1,12 +1,15 @@
 #include <iostream>
 #include "funcionprima.h"
-using namespace std;
-
-int main(){
-    int x;
-    for (x=500; x<=10001; x++ ){}
-        if (){
-            cout<< x <<endl;
-        }
-
+int main (){
+int numprimos = 1;
+int num = 1;
+ 
+while (numprimos < 10001) {
+    num = num + 2;
+    if (funcionprima(num)) {
+        numprimos++;
     }
+}
+cout<<num<<endl;
+return 0;
+}
